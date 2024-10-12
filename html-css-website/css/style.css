@@ -1,0 +1,100 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3, h4 {
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem 0;
+}
+
+/* Quote styles */
+mark {
+    background-color: #ffffd0;
+    padding: 0.2rem;
+}
+
+/* Photo gallery styles */
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1rem 0;
+}
+
+.photo-gallery img {
+    width: 200px;
+    margin: 0.5rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    .photo-gallery img {
+        width: 100%;
+    }
+}
