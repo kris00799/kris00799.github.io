@@ -1,0 +1,207 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Container max-width */
+.site-header, main, .site-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+.site-header {
+    background-color: #c78c06;
+    padding: 20px;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 200px;
+}
+
+/* Navigation Styles */
+.nav-menu {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.nav-menu li {
+    margin-bottom: 10px;
+}
+
+.nav-menu a {
+    color: #222;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background-color: #ffe6ac;
+}
+
+.nav-menu a:hover {
+    background-color: #c78c06;
+    color: #fff;
+}
+
+/* Search Form */
+.search-form {
+    display: flex;
+    margin: 20px 0;
+}
+
+.search-form label {
+    position: absolute;
+    left: -9999px;
+}
+
+.search-form input[type="search"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #222;
+}
+
+.search-form button {
+    background-color: #222;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+}
+
+.hero-section img {
+    width: 100%;
+    height: auto;
+}
+
+.main-content {
+    background-color: rgba(34, 34, 34, 0.8);
+    color: #fff;
+    padding: 20px;
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    background-color: #c78c06;
+    color: #222;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+/* Services Section */
+.service-card {
+    border: 1px solid #222;
+    margin: 20px 0;
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+}
+
+.service-card h3,
+.service-card p {
+    padding: 10px;
+}
+
+/* Contact Section */
+/* Using Grid for the hours table */
+.hours-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+/* Form Styles */
+.form-group {
+    margin: 20px 0;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #222;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.site-footer a {
+    color: #c78c06;
+}
+
+/* Media Query for 760px and above */
+@media screen and (min-width: 760px) {
+    /* Header */
+    .site-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Navigation */
+    .nav-menu {
+        display: flex;
+        margin: 0;
+    }
+
+    .nav-menu li {
+        margin: 0 10px;
+    }
+
+    /* Services Section - Using Flexbox */
+    .services-section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .service-card {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    /* Contact Section */
+    .contact-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    /* Team Section */
+    .team-section {
+        display: flex;
+        gap: 20px;
+    }
+
+    .team-member {
+        flex: 1;
+    }
+}
